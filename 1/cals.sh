@@ -1,5 +1,4 @@
 #!/bin/bash
-
 c_on_p=$(echo "$1/$2" | bc)
 
 echo "" > params.txt
@@ -18,4 +17,4 @@ fi
 
 sum=$(echo "scale=10; (" $(echo $res | tr ' ' '+') ") / $2" | bc)
 
-echo sum
+echo $sum

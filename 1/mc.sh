@@ -1,12 +1,5 @@
 #!/bin/bash
 
-
-
-# Note: Pi calculation
-# tan(pi/4) = 1
-# atan(1) = pi/4 and
-# pi = 4*atan(1)
-
 function f {
     x=$(echo "$1" | bc -l)
     echo "2*$x*$x" | bc -l
